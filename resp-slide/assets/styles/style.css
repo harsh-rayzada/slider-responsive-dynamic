@@ -1,3 +1,12 @@
+.p-init{
+  padding: 0px;
+}
+.m-init{
+  margin: 0px;
+}
+.full-width{
+  width: 100%;
+}
 .ez_head{
     margin: 0 auto;
     background-color: #5CB85C;
@@ -9,7 +18,7 @@
 }
 #custom-search-input {
     margin:0;
-    /*margin-top: 10px;*/
+    /*margin-top: 5px;*/
     padding: 0;
 }
 
@@ -29,21 +38,31 @@
 #custom-search-input button {
     border: 0;
     background: none;
+    text-shadow: none;
+    box-shadow: none;
     /** belows styles are working good */
-    padding: 2px 5px;
+    /*padding: 2px 5px;
     margin-top: 2px;
     position: relative;
-    left: -28px;
+    left: -28px;*/
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    margin-bottom: 0;
+    /*margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 3px;*/
     color:#AFB5B5;
 }
 
 .search-query:focus + button {
     z-index: 3;   
+}
+#custom-search-input .ui-input-text, .ui-input-search{
+  margin: 0px;
+}
+#custom-search-input .search_btn{
+  position: absolute;
+  top: -9px;
+  right: 35px;
 }
 .ez_tabs{
 	padding: 0px;
@@ -63,15 +82,16 @@
 .ez_tabs_tab1 i, .ez_tabs_tab2 i{
 	vertical-align: top;
 }
-.ez_head_cart,.ez_head_icon {
+/*.ez_head_cart,.ez_head_icon {
 	margin-top: 6px;
-}
+}*/
 .ez_head_cart i{
 	font-size: 38px;
     color: #ffffff;
 }
 .ez_slider{
 	padding: 0px;
+  margin-top: 20px;
 }
 /*.ez_slider_img {*/
 	/*width: 100%;*/
