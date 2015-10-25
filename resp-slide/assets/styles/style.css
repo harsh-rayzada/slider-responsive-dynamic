@@ -4,7 +4,7 @@
     padding: 20px;
 }
 .ez_head_icon i{ 
-    font-size: 24px;
+    font-size: 40px;
     color: #ffffff;	
 }
 #custom-search-input {
@@ -64,10 +64,10 @@
 	vertical-align: top;
 }
 .ez_head_cart,.ez_head_icon {
-	margin-top: 10px;
+	margin-top: 6px;
 }
 .ez_head_cart i{
-	font-size: 24px;
+	font-size: 38px;
     color: #ffffff;
 }
 .ez_slider{
