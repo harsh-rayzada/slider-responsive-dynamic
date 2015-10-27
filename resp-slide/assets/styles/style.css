@@ -1,15 +1,24 @@
+.p-init{
+  padding: 0px;
+}
+.m-init{
+  margin: 0px;
+}
+.full-width{
+  width: 100%;
+}
 .ez_head{
     margin: 0 auto;
     background-color: #5CB85C;
     padding: 20px;
 }
 .ez_head_icon i{ 
-    font-size: 24px;
+    font-size: 40px;
     color: #ffffff;	
 }
 #custom-search-input {
     margin:0;
-    /*margin-top: 10px;*/
+    /*margin-top: 5px;*/
     padding: 0;
 }
 
@@ -29,21 +38,31 @@
 #custom-search-input button {
     border: 0;
     background: none;
+    text-shadow: none;
+    box-shadow: none;
     /** belows styles are working good */
-    padding: 2px 5px;
+    /*padding: 2px 5px;
     margin-top: 2px;
     position: relative;
-    left: -28px;
+    left: -28px;*/
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    margin-bottom: 0;
+    /*margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 3px;*/
     color:#AFB5B5;
 }
 
 .search-query:focus + button {
     z-index: 3;   
+}
+#custom-search-input .ui-input-text, .ui-input-search{
+  margin: 0px;
+}
+#custom-search-input .search_btn{
+  position: absolute;
+  top: -9px;
+  right: 35px;
 }
 .ez_tabs{
 	padding: 0px;
@@ -63,29 +82,30 @@
 .ez_tabs_tab1 i, .ez_tabs_tab2 i{
 	vertical-align: top;
 }
-.ez_head_cart,.ez_head_icon {
-	margin-top: 10px;
-}
+/*.ez_head_cart,.ez_head_icon {
+	margin-top: 6px;
+}*/
 .ez_head_cart i{
-	font-size: 24px;
+	font-size: 38px;
     color: #ffffff;
 }
 .ez_slider{
 	padding: 0px;
+  margin-top: 20px;
 }
-.ez_slider_img {
+/*.ez_slider_img {*/
 	/*width: 100%;*/
 	/*height: 400px !important;*/
-}
+/*}*/
 /* carousel */
-.media-carousel 
+/*.media-carousel 
 {
   margin-bottom: 0;
   padding: 0 40px 30px 40px;
   margin-top: 30px;
-}
+}*/
 /* Previous button  */
-.media-carousel .carousel-control.left 
+/*.media-carousel .carousel-control.left 
 {
   left: -12px;
   background-image: none;
@@ -95,9 +115,9 @@
   height: 40px;
   width : 40px;
   margin-top: 30px
-}
+}*/
 /* Next button  */
-.media-carousel .carousel-control.right 
+/*.media-carousel .carousel-control.right 
 {
   right: -12px !important;
   background-image: none;
@@ -107,17 +127,17 @@
   height: 40px;
   width : 40px;
   margin-top: 30px
-}
+}*/
 /* Changes the position of the indicators */
-.media-carousel .carousel-indicators 
+/*.media-carousel .carousel-indicators 
 {
   right: 50%;
   top: auto;
   bottom: 0px;
   margin-right: -19px;
-}
+}*/
 /* Changes the colour of the indicators */
-.media-carousel .carousel-indicators li 
+/*.media-carousel .carousel-indicators li 
 {
   background: #c0c0c0;
 }
@@ -129,6 +149,13 @@
 {
   width: 250px;
   height: 100px
-}
+}*/
 /* End carousel */
+
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev        { left: -25%; }
+.carousel-control            { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
 
