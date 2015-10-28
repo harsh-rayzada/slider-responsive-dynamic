@@ -1,48 +1,90 @@
       <header class=" col-md-12 col-sm-12 col-xs-12 ez_head p-init">
-        <div class="col-md-2 col-sm-2 col-xs-2 ez_head_icon p-init">
-           <a href="#mypanel" class=""><i class="fa fa-bars "></i></a>
+        <div class="col-md-3 col-sm-3 col-xs-3 ez_head_icon p-init">
+           <a href="#mypanel" class=""><img src="images/nav_icon.png" alt="ez nav icon"></a>
         </div>
-        <div class="col-md-8 col-sm-8 col-xs-8 p-init" id="custom-search-input">
+        <div class="col-md-6 col-sm-6 col-xs-6 p-init" id="custom-search-input">
             <div class="input-group full-width">
                 <input type="text" class="" placeholder="Search" />
                 <span class="input-group-btn search_btn">
-                    <button class="btn btn-danger" type="button">
+                    <button class="btn btn-danger p-init m-init" type="button">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                 </span>
             </div>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2 p-init ez_head_cart text-right">
+        <div class="col-md-3 col-sm-3 col-xs-3 p-init ez_head_cart text-right">
           <i class="fa fa-shopping-cart"></i>
+          <span class="badge">5</span>
         </div>
       </header>
-      <div class=" col-md-12 col-sm-12 col-xs-12 ez_tabs">
-        <div class=" col-md-6 col-sm-6 col-xs-6 ez_tabs_tab1"  data-toggle="collapse" data-target="#tab1" aria-expanded="false" aria-controls="tab1">
-          <h4>MY DEMO <i class="fa fa-chevron-down"></i></h4>
+      <div class="col-md-12 col-sm-12 col-xs-12 ez_tabs">
+
+        <div class="col-md-6 col-sm-6 col-xs-6 ez_tabs_tab1 border_right" role="button" data-toggle="collapse" data-parent="#accordion" href="#ez_location_tab" aria-expanded="false" aria-controls="ez_location_tab">
+          <h4>Location<i class="fa fa-chevron-down"></i></h4>
         </div>
-        <div class=" col-md-6 col-sm-6 col-xs-6 ez_tabs_tab2" data-toggle="collapse" data-target="#tab2" aria-expanded="false" aria-controls="tab2">
-          <h4>MY ITEM <i class="fa fa-chevron-down"></i></h4>
-        </div>      
+        <div class="col-md-6 col-sm-6 col-xs-6 ez_tabs_tab2" role="button" data-toggle="collapse" data-parent="#accordion" href="#ez_categories_tab" aria-expanded="false" aria-controls="ez_categories_tab">
+          <h4>Categories<i class="fa fa-chevron-down"></i></h4>
+        </div>
+
       </div>
-        <div class="collapse" id="tab1">    
-          <ol>
-            <li>abcx</li>
-            <li>cjwkej</li>
-            <li>kcbkw</li>
-            <li>cnkjwebnkv</li>
-          </ul>
+        <div class="collapse" id="ez_location_tab" class="panel-collapse collapse">    
+          <div class="col-md-12 col-sm-12 col-xs-12 p-init text-center">
+            <div class="location_city text-center bg_default">
+              <a href="#"><h3>Bangalore</h3></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 1</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 2</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 3</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 1</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 2</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 3</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 1</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 2</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 3</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 1</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 2</h5></a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+              <a href="#"><h5>HSR Layout, Sector 3</h5></a>
+            </div>
+            
+          </div>
         </div>    
-        <div class="collapse" id="tab2">    
-          <ol>
-            <li>abcx</li>
-            <li>cjwkej</li>
-            <li>kcbkw</li>
-            <li>cnkjwebnkv</li>
+        <div class="collapse" id="ez_categories_tab" class="panel-collapse collapse" role="tabpanel">    
+          <ul class="p-init">
+            <li class="clear"><a href="">Beverages</a></li>
+            <li><a href="">Personal Care</a></li>
+            <li><a href="">Fruits & Vegetables</a></li>
+            <li><a href="">Grocery & Staples</a></li>
+            <li><a href="">Household</a></li>
+            <li><a href="">Diwali</a></li>
+            <li><a href="">Dhanteras</a></li>
           </ul>
         </div>
 
 
-        <section class="col-sm-12 col-xs-12 ez_slider">
+        <!-- <section class="col-sm-12 col-xs-12 ez_slider">
           <div class="container">
             <div class="carousel slide" id="myCarousel">
               <div class="carousel-inner">
@@ -66,14 +108,26 @@
               <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
           </div>
-        </section>
+        </section> -->
       
       <footer class="col-md-12 col-sm-12 col-xs-12 ez_footer">
         
       </footer>
       <div data-role="panel" id="mypanel" data-position="left" data-display="overlay" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-closed" >
-          this is panel slide
-      </div><!-- /panel -->
+          <div class="logo_block text-center bg_default">
+            <img src="images/brand.png" alt="ezkirana" class="img-responsive">
+          </div>
+
+          <div class="left_nav_menu">
+            <ul class="p-init">
+              <li class=""><a href="#">Home</a></li>
+              <li class=""><a href="#">Categories</a></li>
+              <li class=""><a href="#">Location</a></li>
+              <li class=""><a href="#">Sign In</a></li>
+              <li class=""><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+      </div>
 
       
       

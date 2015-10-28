@@ -4,6 +4,13 @@
 .m-init{
   margin: 0px;
 }
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+.bg_default{
+  background-color: #5CB85C;
+}
 .full-width{
   width: 100%;
 }
@@ -18,7 +25,7 @@
 }
 #custom-search-input {
     margin:0;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     padding: 0;
 }
 
@@ -40,17 +47,8 @@
     background: none;
     text-shadow: none;
     box-shadow: none;
-    /** belows styles are working good */
-    /*padding: 2px 5px;
-    margin-top: 2px;
-    position: relative;
-    left: -28px;*/
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-    /*margin-bottom: 0;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;*/
     color:#AFB5B5;
+    padding: 0em 1em;
 }
 
 .search-query:focus + button {
@@ -58,17 +56,25 @@
 }
 #custom-search-input .ui-input-text, .ui-input-search{
   margin: 0px;
+  font-size: .8em;
 }
 #custom-search-input .search_btn{
   position: absolute;
-  top: -9px;
+  top: 5px;
   right: 35px;
+}
+#custom-search-input .search_btn span.glyphicon-search{
+  font-size: .8em;
 }
 .ez_tabs{
 	padding: 0px;
     border-bottom: 1px solid gray;
     height: 40px;
 }
+.border_right{
+  border-right: 1px solid gray;
+}
+
 .ez_tabs_tab1{
 	border-right: 1px solid gray;
 }
@@ -77,85 +83,111 @@
 }
 .ez_tabs_tab1 i, .ez_tabs_tab2 i{
 	font-size: 16px;
+  padding-left: 10px;
+  padding-top: 2px;
 }
 .ez_tabs_tab1 h4, .ez_tabs_tab2 h4,
 .ez_tabs_tab1 i, .ez_tabs_tab2 i{
 	vertical-align: top;
 }
-/*.ez_head_cart,.ez_head_icon {
-	margin-top: 6px;
-}*/
+.ez_head_cart{
+	margin-top: 2px;
+}
+.ez_head_cart span.badge{
+  vertical-align: top;
+  margin-top: -10px;
+  font-weight: 100;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0px;
+  background-color: rgba(52, 101, 52, 0.98);
+}
+.ez_head_icon {
+  margin-top: 4px;
+}
 .ez_head_cart i{
-	font-size: 38px;
+	font-size: 25px;
     color: #ffffff;
 }
-.ez_slider{
+/*.ez_slider{
 	padding: 0px;
   margin-top: 20px;
-}
-/*.ez_slider_img {*/
-	/*width: 100%;*/
-	/*height: 400px !important;*/
-/*}*/
-/* carousel */
-/*.media-carousel 
-{
-  margin-bottom: 0;
-  padding: 0 40px 30px 40px;
-  margin-top: 30px;
 }*/
-/* Previous button  */
-/*.media-carousel .carousel-control.left 
-{
-  left: -12px;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}*/
-/* Next button  */
-/*.media-carousel .carousel-control.right 
-{
-  right: -12px !important;
-  background-image: none;
-  background: none repeat scroll 0 0 #222222;
-  border: 4px solid #FFFFFF;
-  border-radius: 23px 23px 23px 23px;
-  height: 40px;
-  width : 40px;
-  margin-top: 30px
-}*/
-/* Changes the position of the indicators */
-/*.media-carousel .carousel-indicators 
-{
-  right: 50%;
-  top: auto;
-  bottom: 0px;
-  margin-right: -19px;
-}*/
-/* Changes the colour of the indicators */
-/*.media-carousel .carousel-indicators li 
-{
-  background: #c0c0c0;
-}
-.media-carousel .carousel-indicators .active 
-{
-  background: #333333;
-}
-.media-carousel img
-{
-  width: 250px;
-  height: 100px
-}*/
-/* End carousel */
 
 
-.carousel-inner .active.left { left: -25%; }
-.carousel-inner .next        { left:  25%; }
-.carousel-inner .prev        { left: -25%; }
-.carousel-control            { width:  4%; }
-.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+/*left side panel*/
+
+.ui-panel-inner{
+  padding: 0px;
+}
+
+.logo_block{
+  padding: 10px 20px 10px 0px;
+  cursor: pointer;
+}
+
+.left_nav_menu ul{
+  /*padding: 0px 0px 0px 20px*/
+}
+
+.left_nav_menu ul li a,
+#ez_categories_tab ul li a{
+  text-decoration: none;
+  color: rgb(42, 42, 42);
+  font-weight: lighter;
+}
+
+.left_nav_menu ul li{
+  list-style: none;
+  padding: 20px 25px;
+}
+
+.left_nav_menu ul li:hover{
+  color: rgb(42, 42, 42);
+  background-color: rgba(238, 238, 238, 0.47);
+}
+
+
+
+
+
+#ez_categories_tab ul li{
+  list-style: none;
+  padding: 10px 25px;
+  background-color: rgba(238, 238, 238, 0.47);
+  border-bottom: 1px solid #5CB85C;
+
+}
+
+#ez_categories_tab ul li:first-child{
+  border-top: 1px solid #5CB85C;
+}
+
+#ez_categories_tab ul li:last-child{
+  border-bottom: 0px;
+}
+
+
+
+/*location*/
+
+#ez_location_tab .location_city h3{
+  color: #ffffff;
+  padding: 20px 0px;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
