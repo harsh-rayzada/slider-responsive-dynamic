@@ -149,4 +149,58 @@ $( document ).ready(function(){
     //     }
     //   }
     // });
+
+    $('#locationList').click(function(e){
+        if($('#ez_categories_tab').hasClass('opened')){
+            $('#ez_categories_tab').slideUp(100);
+            $('#ez_location_tab').slideDown(100);
+            $('#ez_location_tab').addClass('opened').removeClass('list-hidden');
+            $('#ez_categories_tab').addClass('list-hidden').removeClass('opened');
+        }else{
+            $('#ez_location_tab').slideToggle(100);
+            $('#ez_location_tab').addClass('opened').removeClass('list-hidden');
+            $('#ez_categories_tab').addClass('list-hidden').removeClass('opened');
+        }
+    });
+
+    $('#categoryList').click(function(e){
+        if($('#ez_location_tab').hasClass('opened')){
+            $('#ez_categories_tab').slideDown(100);
+            $('#ez_location_tab').slideUp(100);
+            $('#ez_categories_tab').addClass('opened').removeClass('list-hidden');
+            $('#ez_location_tab').addClass('list-hidden').removeClass('opened');
+        }else{
+            $('#ez_categories_tab').slideToggle(100);
+            $('#ez_categories_tab').addClass('opened').removeClass('list-hidden');
+            $('#ez_location_tab').addClass('list-hidden').removeClass('opened');
+        }
+    });
+
+    $('#Beverages').click(function(e){
+        showList('Beverages','Fruits','Diwali','Beverages');
+    });
+
+    $('#Fruits').click(function(e){
+        showList('Fruits','Beverages', 'Diwali','Fruits');
+    });
+
+    $('#Diwali').click(function(e){
+        showList('Diwali','Beverages','Fruits', 'Diwali');
+    });
+
+    function showList(id, hid1, hid2, list){
+        if($('#'+hid1).hasClass('list-open') || $('#'+hid2).hasClass('list-open')){
+            $('#'+hid1+'List').slideUp(500);
+            $('#'+hid1).removeClass('list-open');
+
+            $('#'+hid2+'List').slideUp(500);
+            $('#'+hid2).removeClass('list-open');
+
+            $('#'+id+'List').slideDown(500);
+            $('#'+id).addClass('list-open');
+        }else{
+            $('#'+id).addClass('list-open');
+            $('#'+list+'List').slideToggle(500);
+        }
+    }
 });
