@@ -34,13 +34,11 @@ module.exports.routes = {
 
   '/slide': 'SlideController.get',
 
-  '/home':{
-      view: 'home'
-  },
+  '/home': 'SlideController.get'
 
-  '/':{
-      view: 'home'
-  }
+  // '/':{
+  //     view: 'home'
+  // }
 
   /***************************************************************************
   *                                                                          *

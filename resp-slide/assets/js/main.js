@@ -67,7 +67,7 @@ $( document ).ready(function(){
         var elem = $('.anchor');
         var elem1 = elem.first()[0].id;
         var elem2 = elem.last()[0].id;
-        if(elem1<listContent.length && elem2<listContent.length){
+        if(elem1<listContent.length && (elem2 == listContent.length || elem2 < (listContent.length-1))){
             console.log(elem1,elem2);
             var parent = $('.anchor');
             for(var i=parseInt(elem1),j=0;i<parseInt(elem2)+1;i++,j++){
@@ -111,8 +111,8 @@ $( document ).ready(function(){
             $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
         }
     }else{
-        limit=4;
-        for(var i=0;i<4;i++){
+        limit=6;
+        for(var i=0;i<6;i++){
             $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
         }
     }

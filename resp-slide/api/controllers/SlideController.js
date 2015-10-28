@@ -73,7 +73,7 @@ var arr = [
 ];
 module.exports = {
 	get: function(req, res){
-		res.view('slide',{data: arr});
+		res.view('home',{data: arr});
 	}
 };
 
