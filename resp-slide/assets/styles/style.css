@@ -4,6 +4,17 @@
 .m-init{
   margin: 0px;
 }
+.container-p-init{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 .clear{
   clear: both;
   overflow: hidden;
@@ -25,7 +36,6 @@
 }
 #custom-search-input {
     margin:0;
-    /*margin-top: 5px;*/
     padding: 0;
 }
 
@@ -34,8 +44,6 @@
     padding-right: 4px \9;
     padding-left: 3px;
     padding-left: 4px \9;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -89,19 +97,23 @@
 .ez_tabs_tab1 h4, .ez_tabs_tab2 h4,
 .ez_tabs_tab1 i, .ez_tabs_tab2 i{
 	vertical-align: top;
+  cursor: pointer;
 }
 .ez_head_cart{
 	margin-top: 2px;
+  padding-right: 10px;
+  position: relative;
+  cursor: pointer;
 }
 .ez_head_cart span.badge{
-  vertical-align: top;
-  margin-top: -10px;
-  font-weight: 100;
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  padding: 0px;
-  background-color: rgba(52, 101, 52, 0.98);
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    line-height: 15px;
+    background-color: rgba(52, 101, 52, 0.98);
+    font-weight: lighter;
 }
 .ez_head_icon {
   margin-top: 4px;
@@ -110,10 +122,29 @@
 	font-size: 25px;
     color: #ffffff;
 }
-/*.ez_slider{
-	padding: 0px;
-  margin-top: 20px;
-}*/
+
+/*modal*/
+#product_cart .modal-header{
+  padding: 0px 15px;
+  border-bottom: 0px;
+}
+
+#product_cart .modal-header button{
+  width: 50px;
+  height: 50px;
+  font-size: 3em;
+}
+
+#product_cart .modal-header button:hover{
+  background-color: white;
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.modal-backdrop.in{
+  opacity: 0.7;
+}
 
 
 /*left side panel*/
@@ -132,14 +163,17 @@
 }
 
 .left_nav_menu ul li a,
-#ez_categories_tab ul li a{
-  text-decoration: none;
+#ez_categories_tab ul li a,
+#ez_location_tab ul li a h5{
   color: rgb(42, 42, 42);
   font-weight: lighter;
 }
 
+#ez_categories_tab i{
+  padding-top: 2px;
+}
+
 .left_nav_menu ul li{
-  list-style: none;
   padding: 20px 25px;
 }
 
@@ -148,12 +182,8 @@
   background-color: rgba(238, 238, 238, 0.47);
 }
 
-
-
-
-
 #ez_categories_tab ul li{
-  list-style: none;
+  
   padding: 10px 25px;
   background-color: rgba(238, 238, 238, 0.47);
   border-bottom: 1px solid #5CB85C;
@@ -164,9 +194,9 @@
   border-top: 1px solid #5CB85C;
 }
 
-#ez_categories_tab ul li:last-child{
+/*#ez_categories_tab ul li:last-child{
   border-bottom: 0px;
-}
+}*/
 
 
 
@@ -178,15 +208,171 @@
   margin: 0px;
 }
 
+#ez_location_tab .location_city a.ui-link:hover{
+  text-decoration: none;
+}
+
+.content-inside a img{
+  width: 255px;
+}
 
 
+/*Footer*/
+
+.payment-method .po {
+    border-right: 1px solid #b3b3b3;
+    margin-right: 15px;
+}
+.payment-method .cod {
+    line-height: 15px;
+    font-size: 12px;
+}
+
+.payment-method .fa {
+    font-size: 30px;
+    color: #6F7071;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    
+}
+
+footer .footer-col .footer-col-inner ul li a,
+footer .bottom-bar a{
+  color: rgb(42, 42, 42);
+  font-weight: lighter;
+}
 
 
+/*Product*/
+
+.product_img{
+  background: url('../images/Milton_Casserole_-_Buffet_(Red)_2_Liter_jpg_562c89d53f0000c80accf2ed.jpeg');
+  margin-top: 8px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 161px;
+}
+
+.caption {
+    position: relative;
+    min-height: 170px;
+    padding: 0px;
+}
+
+.caption h5{
+  text-align: center;
+  height: 32px;
+}
+
+.product_block{
+  display: block;
+  background-color: #ffffff;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+.price-container {
+    line-height: 30px;
+    padding: 0px 10px;
+}
+
+.price-container:last-child .inner-price-container:last-child {
+    border-bottom: none;
+}
+
+.inner-price-container {
+    position: relative;
+    border-bottom: 1px dotted #a2a2a2;
+    padding: 0px 5px;
+}
+
+.price-container:last-child .inner-price-container:last-child {
+    border-bottom: none;
+}
+
+.inner-price-container .cart-left-cont, .inner-price-container .cart-right-cont {
+    position: absolute;
+    top: 0px;
+    /*display: none;*/
+}
+
+/*.inner-price-container:hover {
+    background-color: #f1d6b2;
+    cursor: pointer;
+}*/
+
+/*.inner-price-container:hover .cart-left-cont,
+.inner-price-container:hover .cart-right-cont{
+    display: block;
+}*/
+
+.inner-price-container span:last-child {
+    border-right: none;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.inner-price-container .prod-qty {
+    font-size: 14px;
+}
+.border-right {
+    border-right: 1px solid #c4c4c4;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.inner-price-container s {
+    color: #a2a2a2;
+}
+
+.inner-price-container .cart-right-cont {
+    right: 3px;
+}
 
 
+.inner-price-container .cart-left-cont .btn, .inner-price-container .cart-right-cont .btn {
+    padding: 0px 4px;
+}
 
-
-
+.inner-price-container:hover {
+    background-color: #f1d6b2;
+}
 
 
 
