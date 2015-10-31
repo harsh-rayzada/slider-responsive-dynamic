@@ -74,7 +74,7 @@ $( document ).ready(function(){
                 if(listContent[i+limit]){
                     $(parent)[j].id=i+limit;
                     parent[j].href=listContent[i+limit].link;
-                    $(parent[j]).find('img')[0].src="images/"+listContent[i+limit].imgSrc;
+                    $(parent[j]).find('.item-price')[0].innerHTML=listContent[i+limit].price;
                 }else{
                     $(parent)[j].id=i+limit;
                     $(parent[j]).addClass('hide');
@@ -95,7 +95,7 @@ $( document ).ready(function(){
                 $(parent)[j].id=i-limit;
                 $(parent[j]).removeClass('hide');
                 parent[j].href=listContent[i-limit].link;
-                $(parent[j]).find('img')[0].src="images/"+listContent[i-limit].imgSrc;
+                $(parent[j]).find('.item-price')[0].innerHTML=listContent[i-limit].price;
             }
         }
     });
@@ -103,17 +103,20 @@ $( document ).ready(function(){
     if($(window).width()<768){
         limit=2;
         for(var i=0;i<2;i++){
-            $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
         }
     }else if($(window).width()<992){
         limit=3;
         for(var i=0;i<3;i++){
-            $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
         }
     }else{
         limit=6;
         for(var i=0;i<6;i++){
-            $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
         }
     }
 

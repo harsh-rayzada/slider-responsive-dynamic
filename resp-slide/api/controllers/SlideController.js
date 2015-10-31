@@ -8,67 +8,67 @@
 var arr = [
 	{
 		imgSrc : "img3.jpeg",
-		link: "1"
+		price: "100"
 	},
 	{
 		imgSrc : "img4.jpeg",
-		link: "2"
+		price: "200"
 	},
 	{
 		imgSrc : "img5.jpeg",
-		link: "3"
+		price: "300"
 	},
 	{
 		imgSrc : "img6.jpeg",
-		link: "4"
+		price: "400"
 	},
 	{
 		imgSrc : "img7.jpeg",
-		link: "5"
+		price: "500"
 	},
 	{
 		imgSrc : "img8.jpeg",
-		link: "6"
+		price: "100"
 	},
 	{
 		imgSrc : "img10.jpeg",
-		link: "7"
+		price: "200"
 	},
 	{
 		imgSrc : "img11.jpeg",
-		link: "8"
+		price: "300"
 	},
 	{
 		imgSrc : "img3.jpeg",
-		link: "9"
+		price: "400"
 	},
 	{
 		imgSrc : "img4.jpeg",
-		link: "10"
+		price: "500"
 	},
 	{
 		imgSrc : "img5.jpeg",
-		link: "11"
+		price: "600"
 	},
 	{
 		imgSrc : "img6.jpeg",
-		link: "12"
+		price: "100"
 	},
 	{
 		imgSrc : "img7.jpeg",
-		link: "13"
+		price: "200"
 	},
 	{
 		imgSrc : "img8.jpeg",
-		link: "14"
+		price: "300"
 	},
 	{
 		imgSrc : "img10.jpeg",
-		link: "15"
+		price: "400"
 	},
 	{
 		imgSrc : "img11.jpeg",
-		link: "16"
+		price: "500"
 	}
 ];
 module.exports = {
