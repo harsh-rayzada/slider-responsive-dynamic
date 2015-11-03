@@ -7,68 +7,68 @@
 
 var arr = [
 	{
-		imgSrc : "img3.jpeg",
-		price: "100"
+		name: "Besan",
+		price: "1100"
 	},
 	{
-		imgSrc : "img4.jpeg",
+		name: "Maida",
 		price: "200"
 	},
 	{
-		imgSrc : "img5.jpeg",
-		price: "300"
+		name: "Aaloo",
+		price: "3100"
 	},
 	{
-		imgSrc : "img6.jpeg",
+		name: "Nimbu",
 		price: "400"
 	},
 	{
-		imgSrc : "img7.jpeg",
-		price: "500"
+		name: "Pyaj",
+		price: "5100"
 	},
 	{
-		imgSrc : "img8.jpeg",
-		price: "100"
+		name: "urad daal",
+		price: "1200"
 	},
 	{
-		imgSrc : "img10.jpeg",
-		price: "200"
+		name: "chawal",
+		price: "2400"
 	},
 	{
-		imgSrc : "img11.jpeg",
-		price: "300"
+		name: "aata",
+		price: "3600"
 	},
 	{
-		imgSrc : "img3.jpeg",
-		price: "400"
+		name: "chini",
+		price: "4200"
 	},
 	{
-		imgSrc : "img4.jpeg",
-		price: "500"
+		name: "Pyaj",
+		price: "5400"
 	},
 	{
-		imgSrc : "img5.jpeg",
-		price: "600"
+		name: "chawal",
+		price: "6100"
 	},
 	{
-		imgSrc : "img6.jpeg",
-		price: "100"
+		name: "Pyaj",
+		price: "1700"
 	},
 	{
-		imgSrc : "img7.jpeg",
-		price: "200"
+		name: "chini",
+		price: "2500"
 	},
 	{
-		imgSrc : "img8.jpeg",
-		price: "300"
+		name: "Nimbu",
+		price: "3400"
 	},
 	{
-		imgSrc : "img10.jpeg",
-		price: "400"
+		name: "chawal",
+		price: "4400"
 	},
 	{
-		imgSrc : "img11.jpeg",
-		price: "500"
+		name: "Pyaj",
+		price: "5200"
 	}
 ];
 module.exports = {

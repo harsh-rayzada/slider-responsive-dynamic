@@ -68,7 +68,6 @@ $( document ).ready(function(){
         var elem1 = elem.first()[0].id;
         var elem2 = elem.last()[0].id;
         if(elem1<listContent.length && (elem2 == listContent.length || elem2 < (listContent.length-1))){
-            console.log(elem1,elem2);
             var parent = $('.anchor');
             for(var i=parseInt(elem1),j=0;i<parseInt(elem2)+1;i++,j++){
                 if(listContent[i+limit]){
@@ -104,19 +103,22 @@ $( document ).ready(function(){
         limit=2;
         for(var i=0;i<2;i++){
             // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
-            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            // $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>'+listContent[i].name+'</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="price_qan_block clear"><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span>471</span></del></div></div></div></div></div></div>');
         }
     }else if($(window).width()<992){
         limit=3;
         for(var i=0;i<3;i++){
             // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
-            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            // $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>'+listContent[i].name+'</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="price_qan_block clear"><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span>471</span></del></div></div></div></div></div></div>');
         }
     }else{
         limit=6;
         for(var i=0;i<6;i++){
-            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
+            // $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>Milton Casserole block</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="col-xs-6 col-sm-4 col-md-11 col-lg-12 p-init price_qan_block"><div class="tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span class="item-price">471</span></del></div></div></div></div></div></div>');
             // $('.content-inside').append('<a href="'+listContent[i].link+'" class="anchor" id="'+i+'"><img src="images/'+listContent[i].imgSrc+'" alt="img" class="images"/></a>');
+            $('.content-inside').append('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 anchor" id="'+i+'"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 product_block"><div class="product_img"></div><div class="caption"><h5>'+listContent[i].name+'</h5><div class="price-container"><div class="inner-price-container clear"><div class="cart-left-cont pull-left"><span class="btn btn-danger"><i class="fa fa-minus"></i></span></div><div class="cart-right-cont pull-right"><span class="btn btn-success"><i class="fa fa-plus"></i></span></div></div><div class="price_qan_block clear"><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-skus"><div class="tile-sku-size"><div class="tile-sku-size-info-selected triangle-right"><span>1</span><span>Box</span></div></div></div><div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-init tile-sku-price"><div class="tile-sku-ourprice"><i class="fa fa-inr"></i><span class="item-price">'+listContent[i].price+'</span></div><del class="item-mrp"><i class="fa fa-inr"></i><span>471</span></del></div></div></div></div></div></div>');
         }
     }
 
@@ -178,47 +180,4 @@ $( document ).ready(function(){
             $('#ez_location_tab').addClass('list-hidden').removeClass('opened');
         }
     });
-
-    $('#Beverages').click(function(e){
-        showList('Beverages','Fruits','Diwali','Beverages');
-    });
-
-    $('#Fruits').click(function(e){
-        showList('Fruits','Beverages', 'Diwali','Fruits');
-    });
-
-    $('#Diwali').click(function(e){
-        showList('Diwali','Beverages','Fruits', 'Diwali');
-    });
-
-    function showList(id, hid1, hid2, list){
-        if($('#'+hid1).hasClass('list-open') || $('#'+hid2).hasClass('list-open')){
-            $('#'+hid1+'List').slideUp(500);
-            $('#'+hid1).find('.fa-chevron-right').removeClass('hide');
-            $('#'+hid1).find('.fa-chevron-down').addClass('hide');
-            $('#'+hid1).removeClass('list-open');
-
-            $('#'+hid2+'List').slideUp(500);
-            $('#'+hid2).find('.fa-chevron-right').removeClass('hide');
-            $('#'+hid2).find('.fa-chevron-down').addClass('hide');
-            $('#'+hid2).removeClass('list-open');
-
-            $('#'+id+'List').slideDown(500);
-            $('#'+id).find('.fa-chevron-right').addClass('hide');
-            $('#'+id).find('.fa-chevron-down').removeClass('hide');
-            $('#'+id).addClass('list-open');
-        }else{
-            if($('#'+id).hasClass('list-open')){
-                $('#'+id).removeClass('list-open');
-                $('#'+id).find('.fa-chevron-right').removeClass('hide');
-                $('#'+id).find('.fa-chevron-down').addClass('hide');
-                $('#'+list+'List').slideUp(500);
-            }else{
-                $('#'+id).addClass('list-open');
-                $('#'+id).find('.fa-chevron-right').addClass('hide');
-                $('#'+id).find('.fa-chevron-down').removeClass('hide');
-                $('#'+list+'List').slideDown(500);
-            }
-        }
-    }
 });
