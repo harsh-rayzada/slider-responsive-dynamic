@@ -163,11 +163,20 @@
         <div class="container-fluid">
           <div class="row">
             <div class="my-container">
-              <button id="left" style="display:inline-block;">Left</button>
+              <div class="category_block">
+                <div class="col-xs-9 col-sm-10 col-md-11 col-lg-11 p-init category_title">
+                  <h4 class="m-init">Foods and Beverages</h4>
+                </div>
+                <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 p-init category_arrow">
+                  <i class="fa fa-chevron-left" id="left"></i>
+                  <i class="fa fa-chevron-right" id="right"></i>
+                </div>
+              </div>
+              <!-- <button id="left" style="display:inline-block;">Left</button> -->
               <div class="content-2">
                 <div class="content-inside"></div>
               </div>
-              <button id="right" style="display:inline-block;">Right</button>
+              <!-- <button id="right" style="display:inline-block;">Right</button> -->
               <script type="text/javascript">
                 var listContent = <%- JSON.stringify(data) %>;
               </script>
